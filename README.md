@@ -33,6 +33,8 @@ The script provides further instructions on how to use it. It is possible to eit
 
 ### 1. Model Comparison and Video Inference
 
+(First unpack the models from models/models.zip)
+
 Runs one or multiple ONNX segmentation models on `video/demo_video.mp4`, overlays masks, and writes output videos.
 
 Run all models:

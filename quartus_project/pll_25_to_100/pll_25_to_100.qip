@@ -1,0 +1,57 @@
+set_global_assignment -entity "pll_25_to_100" -library "pll_25_to_100" -name IP_TOOL_NAME "QsysPrimePro"
+set_global_assignment -entity "pll_25_to_100" -library "pll_25_to_100" -name IP_TOOL_VERSION "25.3"
+set_global_assignment -entity "pll_25_to_100" -library "pll_25_to_100" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "pll_25_to_100" -library "pll_25_to_100" -name IP_TOOL_VENDOR_NAME "Altera"
+set_global_assignment -entity "pll_25_to_100" -library "pll_25_to_100" -name IP_TOP_LEVEL_COMPONENT_NAME "altera_iopll"
+set_global_assignment -entity "pll_25_to_100" -library "pll_25_to_100" -name PRE_COMPILED_MODULE "ON"
+set_global_assignment -entity "pll_25_to_100" -library "pll_25_to_100" -name OCS_IP_FILE [file join $::quartus(qip_path) "../pll_25_to_100.ip"]
+set_global_assignment -entity "pll_25_to_100" -library "pll_25_to_100" -name OCS_IP_TYPE "altera_iopll"
+set_global_assignment -entity "pll_25_to_100" -library "pll_25_to_100" -name OCS_IP_VERSION "21.0.0"
+set_global_assignment -entity "pll_25_to_100" -library "pll_25_to_100" -name OCS_IP_HASH "bizjt7q"
+set_global_assignment -library "pll_25_to_100" -name SOPCINFO_FILE [file join $::quartus(qip_path) "pll_25_to_100.sopcinfo"]
+set_global_assignment -entity "pll_25_to_100" -library "pll_25_to_100" -name SLD_INFO "QSYS_NAME pll_25_to_100 HAS_SOPCINFO 1 GENERATION_ID 0"
+set_global_assignment -library "pll_25_to_100" -name MISC_FILE [file join $::quartus(qip_path) "pll_25_to_100.cmp"]
+set_global_assignment -entity "pll_25_to_100" -library "pll_25_to_100" -name IP_TARGETED_DEVICE_FAMILY "Agilex 3"
+set_global_assignment -entity "pll_25_to_100" -library "pll_25_to_100" -name IP_TARGETED_PART_TRAIT "DEVICE_SPEEDGRADE::7"
+set_global_assignment -entity "pll_25_to_100" -library "pll_25_to_100" -name IP_TARGETED_PART_TRAIT "part.DEVICE_IOBANK_REVISION::IO96B_REVB1"
+set_global_assignment -entity "pll_25_to_100" -library "pll_25_to_100" -name IP_GENERATED_DEVICE_FAMILY "{Agilex 3}"
+set_global_assignment -entity "pll_25_to_100" -library "pll_25_to_100" -name IP_QSYS_MODE "STANDALONE"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "pll_25_to_100" -name MISC_FILE [file join $::quartus(qip_path) "../pll_25_to_100.ip"]
+
+set_global_assignment -entity "pll_25_to_100_altera_iopll_2100_bizjt7q" -library "altera_iopll_2100" -name IP_COMPONENT_NAME "cGxsXzI1X3RvXzEwMF9hbHRlcmFfaW9wbGxfMjEwMF9iaXpqdDdx"
+set_global_assignment -entity "pll_25_to_100_altera_iopll_2100_bizjt7q" -library "altera_iopll_2100" -name IP_COMPONENT_DISPLAY_NAME "SU9QTEwgSVA="
+set_global_assignment -entity "pll_25_to_100_altera_iopll_2100_bizjt7q" -library "altera_iopll_2100" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "pll_25_to_100_altera_iopll_2100_bizjt7q" -library "altera_iopll_2100" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "pll_25_to_100_altera_iopll_2100_bizjt7q" -library "altera_iopll_2100" -name IP_COMPONENT_AUTHOR "QWx0ZXJh"
+set_global_assignment -entity "pll_25_to_100_altera_iopll_2100_bizjt7q" -library "altera_iopll_2100" -name IP_COMPONENT_VERSION "MjEuMC4w"
+set_global_assignment -entity "pll_25_to_100_altera_iopll_2100_bizjt7q" -library "altera_iopll_2100" -name IP_COMPONENT_DESCRIPTION "QWx0ZXJhIEZQR0EgUGhhc2UtTG9ja2VkIExvb3AgKElPUExMIElQKSBjb3JlIGFsbG93cyB5b3UgdG8gY29uZmlndXJlIHRoZSBzZXR0aW5ncyBvZiB0aGUgIEkvTyBQTEwu"
+set_global_assignment -entity "pll_25_to_100_altera_iopll_2100_bizjt7q" -library "altera_iopll_2100" -name IP_COMPONENT_GROUP "QmFzaWMgRnVuY3Rpb25zL0Nsb2NrczsgUExMcyBhbmQgUmVzZXRzL1BMTA=="
+set_global_assignment -entity "pll_25_to_100_altera_iopll_2100_bizjt7q" -library "altera_iopll_2100" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzY4MzI4NS5odG1s"
+set_global_assignment -entity "pll_25_to_100_altera_iopll_2100_bizjt7q" -library "altera_iopll_2100" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzY4MzI4NS5odG1s"
+set_global_assignment -entity "pll_25_to_100_altera_iopll_2100_bizjt7q" -library "altera_iopll_2100" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzY4MzE5NS5odG1s"
+set_global_assignment -entity "pll_25_to_100_altera_iopll_2100_bizjt7q" -library "altera_iopll_2100" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzY4Mzc2MS5odG1s"
+set_global_assignment -entity "pll_25_to_100_altera_iopll_2100_bizjt7q" -library "altera_iopll_2100" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzc2OTAwMS5odG1s"
+set_global_assignment -entity "pll_25_to_100_altera_iopll_2100_bizjt7q" -library "altera_iopll_2100" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzgxMzY3MS5odG1s"
+set_global_assignment -entity "pll_25_to_100_altera_iopll_2100_bizjt7q" -library "altera_iopll_2100" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzY4MzE2Ni5odG1s"
+set_global_assignment -entity "pll_25_to_100" -library "pll_25_to_100" -name IP_COMPONENT_NAME "cGxsXzI1X3RvXzEwMA=="
+set_global_assignment -entity "pll_25_to_100" -library "pll_25_to_100" -name IP_COMPONENT_DISPLAY_NAME "c3lzdGVt"
+set_global_assignment -entity "pll_25_to_100" -library "pll_25_to_100" -name IP_COMPONENT_REPORT_HIERARCHY "On"
+set_global_assignment -entity "pll_25_to_100" -library "pll_25_to_100" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "pll_25_to_100" -library "pll_25_to_100" -name IP_COMPONENT_AUTHOR "QWx0ZXJh"
+set_global_assignment -entity "pll_25_to_100" -library "pll_25_to_100" -name IP_COMPONENT_VERSION "MS4w"
+
+set_instance_assignment -entity "pll_25_to_100_altera_iopll_2100_bizjt7q" -library "altera_iopll_2100" -name PLL_REFCLK_INPUT_TYPE NOT_BALANCED -to "*tennm_ph2_iopll"
+
+set_global_assignment -library "altera_iopll_2100" -name VERILOG_FILE [file join $::quartus(qip_path) "altera_iopll_2100/synth/pll_25_to_100_altera_iopll_2100_bizjt7q.v"]
+set_instance_assignment -entity "pll_25_to_100_altera_iopll_2100_bizjt7q" -library "altera_iopll_2100" -name TCL_ENTITY_FILE [file join $::quartus(qip_path) "altera_iopll_2100/synth/pll_25_to_100_altera_iopll_2100_bizjt7q_all_ip_params.tcl"]
+set_instance_assignment -entity "pll_25_to_100_altera_iopll_2100_bizjt7q" -library "altera_iopll_2100" -name TCL_ENTITY_FILE [file join $::quartus(qip_path) "altera_iopll_2100/synth/pll_25_to_100_altera_iopll_2100_bizjt7q_parameters.tcl"]
+set_instance_assignment -entity "pll_25_to_100_altera_iopll_2100_bizjt7q" -library "altera_iopll_2100" -name SDC_ENTITY_FILE [file join $::quartus(qip_path) "altera_iopll_2100/synth/pll_25_to_100_altera_iopll_2100_bizjt7q.sdc"] -no_sdc_promotion  -no_auto_inst_discovery  -read_during_post_syn_and_post_fit_timing_analysis 
+set_instance_assignment -entity "pll_25_to_100_altera_iopll_2100_bizjt7q" -library "altera_iopll_2100" -name TCL_ENTITY_FILE [file join $::quartus(qip_path) "altera_iopll_2100/synth/pll_25_to_100_altera_iopll_2100_bizjt7q_pin_map.tcl"]
+set_global_assignment -library "pll_25_to_100" -name VHDL_FILE [file join $::quartus(qip_path) "synth/pll_25_to_100.vhd"]
+
+
+set_global_assignment -entity "pll_25_to_100_altera_iopll_2100_bizjt7q" -library "altera_iopll_2100" -name IP_TOOL_NAME "altera_iopll"
+set_global_assignment -entity "pll_25_to_100_altera_iopll_2100_bizjt7q" -library "altera_iopll_2100" -name IP_TOOL_VERSION "21.0.0"
+set_global_assignment -entity "pll_25_to_100_altera_iopll_2100_bizjt7q" -library "altera_iopll_2100" -name IP_TOOL_ENV "QsysPrimePro"
+

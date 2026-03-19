@@ -1,0 +1,78 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2025  Altera Corporation. All rights reserved.
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and any partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, the Altera Quartus Prime License Agreement,
+# the Altera IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Altera and sold by Altera or its authorized distributors.  Please
+# refer to the Altera Software License Subscription Agreements 
+# on the Quartus Prime software download page.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 25.3.0 Build 109 09/24/2025 SC Pro Edition
+# Date created = 11:48:54  November 03, 2025
+#
+# -------------------------------------------------------------------------- #
+set_global_assignment -name TOP_LEVEL_ENTITY seg_test
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 25.3.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:48:53  NOVEMBER 03, 2025"
+set_global_assignment -name LAST_QUARTUS_VERSION "25.3.0 Pro Edition"
+set_global_assignment -name VHDL_FILE UART/UART_TX_COMP.vhd
+set_global_assignment -name VHDL_FILE UART/UART_RX_COMP.vhd
+set_global_assignment -name VHDL_FILE UART/UART_Image_Interface.vhd
+set_global_assignment -name VHDL_FILE one_ai/Quartus_IP/ONE_AI_Interface.vhd
+set_global_assignment -name VHDL_FILE one_ai/Filters/Threshold_Filter.vhd
+set_global_assignment -name VHDL_FILE one_ai/Filters/Reduce_To_Brightness.vhd
+set_global_assignment -name VHDL_FILE one_ai/Filters/Normalize_Filter.vhd
+set_global_assignment -name VHDL_FILE one_ai/Filters/Inverse_Filter.vhd
+set_global_assignment -name VHDL_FILE one_ai/Filters/Crop_Filter.vhd
+set_global_assignment -name VHDL_FILE one_ai/Core/NN_Layer.vhd
+set_global_assignment -name VHDL_FILE one_ai/Core/CNN_Row_Expander.vhd
+set_global_assignment -name VHDL_FILE one_ai/Core/CNN_Row_Buffer.vhd
+set_global_assignment -name VHDL_FILE one_ai/Core/CNN_Pooling_Efficient.vhd
+set_global_assignment -name VHDL_FILE one_ai/Core/CNN_Normalization.vhd
+set_global_assignment -name VHDL_FILE one_ai/Core/CNN_Convolution.vhd
+set_global_assignment -name VHDL_FILE one_ai/Core/CNN_Upscaling.vhd
+set_global_assignment -name VHDL_FILE one_ai/ONEAI_Top.vhd
+set_global_assignment -name VHDL_FILE one_ai/ONEAI_Data_Package.vhd
+set_global_assignment -name VHDL_FILE one_ai/ONEAI_Config_Package.vhd
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name FAMILY "Agilex 3"
+set_global_assignment -name DEVICE A3CY100BM16AE7S
+
+
+#global clock&reset&GPIO
+set_location_assignment PIN_AD5 -to clk_in
+set_instance_assignment -name IO_STANDARD "1.2 V" -to clk_in -entity seg_test
+set_location_assignment PIN_A12 -to io96_3a_pb0
+set_location_assignment PIN_AG21 -to io96_3a_led0
+set_instance_assignment -name IO_STANDARD "1.2 V" -to io96_3a_pb0 -entity seg_test
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to io96_3a_pb0 -entity seg_test
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to io96_3a_led0 -entity seg_test
+
+#uart via gpio
+#2/4
+set_location_assignment PIN_AG23 -to uart_rx_pin
+set_location_assignment PIN_AG24 -to uart_tx_pin
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to uart_tx_pin -entity seg_test
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to uart_rx_pin -entity seg_test
+
+#uart to spy
+set_location_assignment PIN_AH23 -to spy_rx_pin
+set_location_assignment PIN_AK22 -to spy_tx_pin
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to spy_tx_pin -entity seg_test
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to spy_rx_pin -entity seg_test
+
+#timing design file
+set_global_assignment -name SDC_FILE AXC3000.sdc
+set_global_assignment -name IP_FILE pll_25_to_100.ip
+set_global_assignment -name BOARD default
